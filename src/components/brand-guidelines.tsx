@@ -6,6 +6,7 @@ import { BrandFoundation } from "./brand-foundation"
 import { VisualIdentity } from "./visual-identity"
 import { VerbalIdentity } from "./verbal-identity"
 import { SectionsTaskList } from "./sections-task-list"
+import { ClientFeedbackList } from "./client-feedback-list"
 
 export function BrandGuidelines() {
   return (
@@ -28,6 +29,8 @@ export function BrandGuidelines() {
         brandLexicon={brandGuidelines.brandLexicon}
         voiceSpectrum={brandGuidelines.voiceSpectrum}
       />
+      {/* Client Feedback List below Verbal Identity */}
+      <ClientFeedbackList />
       {/* Sections Task List at the end */}
       <SectionsTaskList />
     </div>
