@@ -17,12 +17,16 @@ export function BrandGuidelines() {
         originStory={brandGuidelines.originStory}
         promise={brandGuidelines.promise}
         ethicalLines={brandGuidelines.ethicalLines}
+        missionStatement={brandGuidelines.missionStatement}
+        visionStatement={brandGuidelines.visionStatement}
+        coreValues={brandGuidelines.coreValues}
         customerPersona={brandGuidelines.customerPersona}
         transformation={brandGuidelines.transformation}
         trustedSources={brandGuidelines.trustedSources}
         antiAudience={brandGuidelines.antiAudience}
         characterArchetype={brandGuidelines.characterArchetype}
         brandPositioning={brandGuidelines.brandPositioning}
+        brandStory={brandGuidelines.brandStory}
       />
       <VisualIdentity brandInspiration={brandGuidelines.brandInspiration} />
       <VerbalIdentity 

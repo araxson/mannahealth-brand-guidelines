@@ -1,7 +1,23 @@
 export interface CustomerPersona {
   description: string
   dayInLife: string
-  additionalPersonas: string[]
+  demographics: {
+    ageRange: string
+    income: string
+    education: string
+    location: string
+    familyStatus: string
+  }
+  psychographics: {
+    values: string[]
+    interests: string[]
+    painPoints: string[]
+    goals: string[]
+  }
+  additionalPersonas: {
+    type: string
+    description: string
+  }[]
 }
 
 export interface BrandPositioning {
@@ -15,11 +31,25 @@ export interface VoiceSpectrum {
   authoritative: number
 }
 
+export interface CoreValue {
+  title: string
+  description: string
+}
+
+export interface BrandStory {
+  challenge: string
+  solution: string
+  outcome: string
+}
+
 export interface BrandGuidelines {
   companyName: string
   originStory: string
   promise: string
   ethicalLines: string
+  missionStatement: string
+  visionStatement: string
+  coreValues: CoreValue[]
   customerPersona: CustomerPersona
   transformation: string[]
   trustedSources: string[]
@@ -32,4 +62,5 @@ export interface BrandGuidelines {
   differentiator: string
   futureVision: string
   dreamCollaboration: string
+  brandStory: BrandStory
 } 
